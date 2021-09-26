@@ -86,7 +86,7 @@
                                         <color key="minimumTrackTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.49890303940000003" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <color key="thumbTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.50481592470000003" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <action selector="weightSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Kki-7Y-rII"/>
+                                            <action selector="weightSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="9ca-Ge-XMU"/>
                                         </connections>
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0F0-S2-2nc">
@@ -122,6 +122,10 @@
                             <constraint firstAttribute="trailing" secondItem="DpU-Gs-T27" secondAttribute="trailing" id="wXv-E8-Ye0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heightValueLabel" destination="Xcz-1j-2c9" id="ewe-7t-IsF"/>
+                        <outlet property="weightValueLabel" destination="LTF-aL-8qu" id="wJK-pH-n76"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
