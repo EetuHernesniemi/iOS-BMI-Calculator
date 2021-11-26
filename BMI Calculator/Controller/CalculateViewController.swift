@@ -37,8 +37,7 @@ class CalculateViewController: UIViewController {
     override func prepare(for seque: UIStoryboardSegue, sender: Any?) {
         if seque.identifier == "goToResult" {
             let destinationVC = seque.destination as! ResultViewController
-            let senderVC = sender as! CalculateViewController
-            destinationVC.bmiValue = senderVC.bmiValue
+            destinationVC.bmiValue = self.bmiValue
         }
     }
 }
