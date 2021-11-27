@@ -8,18 +8,19 @@
 import Foundation
 
 struct CalculatorBrain {
-    var bmiValue: String = "0.0";
+    var bmi : Float = 0.0
     
     func getBMIValue() -> String {
-        return bmiValue
+        let bmiTo1DecimalPlace = String(format: "%.1f", bmi)
+        return bmiTo1DecimalPlace
     }
     
-    func calculate(height: Float, weight: Float) -> String {
-        var bmi : Float = 0
+    mutating func calculate(height: Float, weight: Float){
         if height > 0 && weight > 0 {
             bmi = weight / pow(height,2)
+        } else {
+            bmi = 0.0
         }
-        return String(format:"%.1f", bmi)
     }
     
 }
